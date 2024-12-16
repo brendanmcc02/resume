@@ -1,0 +1,136 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\Large Brendan McCann} & Email : \href{mailto:brendan.mccann02@gmail.com}{brendan.mccann02@gmail.com}\\
+		Dublin, Ireland & Mobile : +353 85 111 4619 \\
+		\href{https://www.linkedin.com/in/brendan-mccann-6b3300268/}{LinkedIn} & \href{https://github.com/brendanmcc02}{GitHub}
+	\end{tabular*}
+	
+	%\section{Introduction}
+	%Hi! I'm a 4th-year Computer Science Student.
+	
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Trinity College Dublin}{Sept. 2020 -- May 2026}
+	{Masters in Computer Science M.C.S}{Grade: First Class Honours}
+	\begin{itemize}
+		\item Awarded the Victor W Graham Prize: Given to the first year Computer Science Student who achieves the highest mark out of the whole course in the Maths Summer exam.
+		\item \textbf{Languages:} Java, SQL, R, C, C++, Assembly.
+	\end{itemize}
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------EXPERIENCE-----------------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Microsoft}{Dublin, Ireland}
+	{Software Engineer Intern}{June - August 2024}
+	\begin{itemize}
+		\item Migrated the Editor Grammar Service (which takes about 34 billion requests/day) from .NET6 to .NET8. Additionally, I had to dual target (.NET6 \& .NET8) two dependencies along the way.
+		\item Experience cross-team communication frequently, as the products I was working on were not owned by my team
+		\item Assisted in the organisation of a company-wide Counter-Strike 2 gaming tournament. Additionally, I was the MC for the event.
+		\item \textbf{Technologies}: C\#, .NET, Service Fabric, Azure DevOps.
+	\end{itemize}
+	
+	\resumeSubheading
+	{Five Guys Burgers \& Fries}{Dublin, Ireland}
+	{Team Leader}{Dec. 2021 - Jan. 2024}
+	\newline\newline A Team Leader is one step underneath a Manager. When they are not around, I was the one in charge of the kitchen.
+	\begin{itemize}
+		\item Led the kitchen and delegated tasks to other crew members throughout service.
+		\item First point of contact for customer issues \& complaints.
+		\item Worked 20 hours/week during University.
+	\end{itemize}
+	
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------PROJECTS-----------------
+	\section{Projects}
+	\begin{itemize}
+		\item \textbf{\href{https://github.com/brendanmcc02/film-rec}{Film Recommender System:}} No deep learning libraries were used, as I wanted to know how they were built from the ground up. Solo project during my studies. \textbf{Technologies: Python.}
+		\item \textbf{\href{https://github.com/hacktrinity-unreal/live-summariser}{Live Court Case Summarizer:}} Collaborated in a 4-person team for the HackTrinity Weekend Hackathon. We won the MVP Bonus Prize. \textbf{Technologies: Python Flask, React JS.}
+		\item \textbf{\href{https://github.com/Sweng-Group-4/sweng-group-4}{AI-Powered Multilingual Image Search:}} Group project in University, partnering with Shutterstock. Chosen as the Team Leader of an 11-person team. Managed 3 sub-teams simultaneously, and was the main point of contact with our client in Shutterstock and the module demonstrators. Hands-on experience with the Agile methodology.
+		\item \textbf{\href{https://github.com/hacktrinity-unreal/live-summariser}{Film Data Visualisation:}} A \href{https://brendanmcc02.github.io/film-data-vis/web/index.html}{Website} with several graphs of my personal film ratings. Automated a weekly shell script to web scrape data from my IMDb profile. Solo project during my studies. \textbf{Technologies: JavaScript, Node JS, Shell Script, HTML, CSS.}
+	\end{itemize}
+	
+	%-------------------------------------------
+\end{document}
